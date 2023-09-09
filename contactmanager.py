@@ -60,10 +60,10 @@ class PhoneBook:
         else:
             table = PrettyTable()
             table.field_names = ["Name", "Phone Number", "Email", "Notes"]
-            table.align["Name"] = "l"  # Left-align the Name column
-            table.align["Phone Number"] = "l"  # Left-align the Phone Number column
-            table.align["Email"] = "l"  # Left-align the Email column
-            table.align["Notes"] = "l"  # Left-align the Notes column
+            table.align["Name"] = "l"  
+            table.align["Phone Number"] = "l" 
+            table.align["Email"] = "l" 
+            table.align["Notes"] = "l" 
             for name, contact in self.contacts.items():
                 formatted_name = f"{contact['emoji']} {name}"
                 table.add_row([formatted_name, contact['phone_number'], contact['email'], contact['notes']])
